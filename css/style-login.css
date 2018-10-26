@@ -1,0 +1,180 @@
+/* css reset = tanda bintang(*) artinya semua */
+*{
+    margin : 0;
+    padding : 0;
+    font-family: calibri;
+}
+a{
+    color:#1da1f2;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+body{
+    background-color:#e1ebee9f;
+}
+
+/* HEADER */
+
+header{
+    background:#fff;
+    box-shadow: 0px 0px 2px #000;
+}
+header ul{
+    margin-left: 17%;
+}
+header ul li{
+    padding: 4px 6px 12px 6px ;
+    display:inline-block;
+    list-style: none;
+    border-bottom: 2px solid transparent;   
+}
+header ul li a{
+    padding: 8px 6px;
+    text-decoration: none;
+    color:dimgray;
+    font-family: calibri;
+    font-weight: bold;
+}
+header li:hover a{
+    color: #1da1f2;
+}
+
+header li:hover{
+    border-bottom: 2px solid #1da1f2;
+}
+
+/* box login */
+
+#box-login{
+    width:60%;
+    height:350px;
+    margin: 10px auto;
+    border:1px solid rgb(196,196,196);
+    background: #eee;
+}
+
+#box-form{
+
+    background:#fff;
+    padding-left:120px;
+    padding-top: 40px;
+}
+
+#box-form .input{
+    width: 275px;
+    height:35px;
+    margin:10px 0px 15px 0px;
+    border-radius: 3px;
+    border:1px solid rgb(196,196,196);
+    padding:3px;
+    background-color: rgb(250, 255, 189);
+    color: #000;
+    font-size: 15px;
+}
+
+#box-form .input:focus{
+    border:1px solid #1da1f2;
+}
+
+#box-form .button{
+    padding:8px 15px 8px 15px;
+    border-radius:15px;
+    background-color: #1da1f2;
+    border:1px solid rgb(196,196,196);
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-right:10px;
+    font-weight: bold;
+    font-size:15px;
+    cursor:pointer;
+    color:white;
+}
+
+#box-form .button:hover{
+    background: dodgerblue;
+}
+
+#box-form .box{
+    cursor:pointer;
+}
+
+/* box footer login */
+
+#box-footer{
+    height:125px;
+    padding-left:120px;
+    padding-top: 10px;
+    color :#657786;
+}
+
+/* box-form-signup */
+
+#box-signUp{
+    width:60%;
+    height:380px;
+    margin: 10px auto;
+    border:1px solid rgb(196,196,196);
+    background: #eee;
+}
+
+#box-form-signup{
+
+    background:#fff;
+    padding-left:120px;
+    padding-top: 35px;
+}
+
+#box-form-signup .input{
+    width: 275px;
+    height:34.8px;
+    margin:10px 0px 15px 0px;
+    border-radius: 3px;
+    border:1px solid rgb(196,196,196);
+    padding:3px;
+    background-color: rgb(250, 255, 189);
+    color: #000;
+    font-size: 15px;
+}
+
+#box-form-signup .input:focus{
+    border:1px solid #1da1f2;
+}
+
+#box-form-signup .button{
+    padding:8px 15px 8px 15px;
+    border-radius:15px;
+    background-color: #1da1f2;
+    border:1px solid rgb(196,196,196);
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-right:10px;
+    font-weight: bold;
+    font-size:15px;
+    cursor:pointer;
+}
+
+#box-form-signup button a{
+    color:white;
+    text-decoration: none;
+}
+
+#box-form-signup button:hover{
+    background: dodgerblue;
+}
+
+#box-form-signup .box{
+    cursor:pointer;
+}
+
+#box-footer-signup{
+    height:100px;
+    padding-left:120px;
+    padding-top: 10px;
+    background-color :#e1ebee9f;
+    color:#657786; 
+    border:1px solid rgb(196,196,196);
+}
+

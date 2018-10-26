@@ -1,0 +1,137 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Twitter</title>
+    <link rel="icon" type="image/x-icon" href="gambar/logo.jpg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <!-- navigasi :list item -->
+        <nav>
+            <!-- Ini logo tapi pakai teks dulu -->
+            <a href="index.html">
+                <h3><i class="fab fa-twitter"></i>Twitter</h3>                
+            </a>
+            <ul>
+                <li><a href="#" class="fas fa-home" id=home > Home </a></li>
+                <li><a href="#" class="far fa-bell" id=notification> Notification </a></li>
+                <li><a href="#" class="far fa-envelope" id=message > Message </a></li>
+            </ul>
+            
+            <form class="search">
+                <input  type="search" placeholder="Search" id=form>
+                <a href = "index.html" class="fas fa-user-circle" id=gambar></a>
+                <button type="submit" id=button>Search</button>
+            </form>
+            
+        </nav>
+    </header>
+    
+    <div class="wrapper">
+        <section>
+            <!-- kiri  -->
+            <div>
+
+                <!-- Summary Profile -->
+                <div id = "profil">
+                    <img src="gambar/image3.jpg" />
+                    <img src="gambar/image.jpg" />
+                    <h2>Mimi Peri</h2>
+                    <h5>@mimiperi</h5>
+                        <h5 id = "tweet">Tweet</h5>
+                        <h5 id = "tweet">Following</h5>
+                        <h5 id = "tweet">Follower</h5>
+                        <h2 id = "angka-tweet">2.776</h2>
+                        <h2 id = "angka-tweet">2.776</h2>
+                        <h2 id = "angka-tweet">2.776</h2>
+                </div>   
+                <!-- Trending -->
+                <div id ="trending-section">Trending Untuk Anda
+                    <ul>
+                        <li><a href="#" id="satu" >#MakersInstitute</a></li><br>
+                        <li><a href="#" >#Python</a></li><br>
+                        <li><a href="#" >#PersibDay</a></li><br>
+                        <li><a href="#" >#TimnasDay</a></li><br>
+                        <li><a href="#" >#JabarJuara</a></li><br>
+                    </ul>
+                </div>
+                
+            </div>
+            <!-- tengah -->
+            <div>
+                <!-- tweetbox -->
+                <div id="tweetbox-section">
+                    <form>
+                        <input type="text" id="tweet-box">
+                        <button type="submit" id="submit-tweet">Tweet</button>
+                    </form>
+                </div>
+                
+                <!-- tweetfeed -->
+                <div id = "tweetfeed-section">
+                    <div class="tweet">
+                        <img src="gambar/image1.jpg" alt="foto orang" id="gambar-akun" />
+                        <h4 id= "user-akun">Nama</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, voluptates! Corrupti eos tempora cumque pariatur!</p>
+                        <span>13:24 - 23 oktober 2018 </span>
+                    </div>
+                    <div class="tweet">
+                            <img src="gambar/image1.jpg" alt="foto orang" id="gambar-akun" />
+                            <video src="video/video.mp4" controls id="video" alt="video orang"></video>
+                            <h4 id= "user-akun">Nama</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, voluptates! Corrupti eos tempora cumque pariatur!</p>
+                            <span>13:24 - 23 oktober 2018 </span>
+                        </div>
+                    <div class="tweet">
+                        <img src="gambar/image1.jpg" alt="foto orang" id="gambar-akun" />
+                        <img src="gambar/image1.jpg" alt="foto orang" id="gambar-tweet" />
+                        <h4 id= "user-akun">Nama</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, voluptates! Corrupti eos tempora cumque pariatur!</p>
+                        <span>13:24 - 23 oktober 2018 </span>
+                    </div>
+                </div>
+            </div>
+            <!-- kanan -->
+            <div>
+                <!-- friend suggestion -->
+                    <div class="following">
+                        <div>
+                            <h3 id="following-head">Following</h3>
+                        </div>
+                        <div>
+                            <img src="gambar/image2.jpg" alt="gambar orang" id="gambar-akun" />
+                            <h4 id="following-nama">Thanos</h4>
+                        </div>
+                        <button type="submit" id="button-follow">following</button>
+                        </div>
+
+                    </div>
+
+                <div id= "remark">Remark</div>
+            </div>
+
+        </section>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li class="bottom-nav">About Us</li>
+                    <li class="bottom-nav">Support</li>
+                    <li class="bottom-nav"> Terms and Condition</li>
+                </ul>
+                <p>Situs ini dibuat dengan kesadaran penuh</p>
+                <p id="copyright-text">&copy;Copyright 2018</p>
+            </nav>
+        </footer>
+
+    </div>
+</body>
+</html>
