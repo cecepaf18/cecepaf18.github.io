@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Twitter</title>
+    <title>Twitter || Profile</title>
     <link rel="icon" type="image/x-icon" href="gambar/logo.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"/>
@@ -35,7 +35,7 @@
                     <div class="dropdown">
                     <img src="gambar/image.jpg" id="gambar-navbar">
                     <div class="dropdown-content">
-                        <img src="gambar/image.jpg" id="gambar-navbar2"><a href="profile.html" id="nama-navbar">@mimiperi</a>
+                        <img src="gambar/home.png" id="gambar-navbar2"><a href="" id="nama-navbar">@mimiperi</a>
                         <a href="editaccount.html">Setting and Privacy</a>
                         <a href="#" onclick="logOut()">Log Out</a>
                     </div>
@@ -44,34 +44,158 @@
                     <button type="submit" id="button">Search</button>
                 </div>
             </div>
-            
         </nav>
     </header>
+
+    <div class="container-fluid">
+        <div id="background">
+            <img src="gambar/wallpapers.jpg" height="320px" width="100%">
+        </div>
+    </div>
+
+    <div class="navbar-bawah">
+        <div class="gambar_profil">
+            <img src="gambar/image2.jpg" id="gambar_profil" alt="gambar" >
+        </div>
+
+        <div id="text-navbar">
+            <ul>
+                <li a href="#" class="text-content">Tweets
+                    <br><a href="#" class="text-angka" id="angka-tweet">0</a>
+                </li>
+                <li a href="#" class="text-content">Following
+                    <br><a href="#" class="text-angka">0</a>
+                </li>
+                <li a href="#" class="text-content">Followers
+                    <br><a href="#" class="text-angka">0</a>
+                </li>
+                <li a href="#" class="text-content">Likes
+                    <br><a href="#" class="text-angka">0</a>
+                </li>
+                <li a href="#" class="text-content">Lists
+                    <br><a href="#" class="text-angka">0</a>
+                </li>
+                <li a href="#" class="text-content">Moments
+                    <br><a href="#" class="text-angka">0</a>
+                </li>  
+            </ul>   
+        </div>
+        
+        <div id="button-edit-profil">
+            <button type="submit" id=button>Edit Profile</button>
+        </div>
+    </div>
+    
     
     <div class="wrapper">
         <section>
             <!-- kiri  -->
             <div>
 
-                <!-- Summary Profile -->
-                <div id = "profil">
-                    <img src="gambar/image3.jpg" />
-                    <img src="gambar/image.jpg" id="gambar_profil"/>
-                    <div class = "profile">
-                        <h2 id = "nama_profile">Mimi Peri</h2>
-                        <h5 id = "nama_akun">@mimiperi</h5>
-                    <div class = "nama_tweet">
-                        <h5 id = "tweet">Tweet</h5>
-                        <h2 id = "angka-tweet">0</h2>
-                        <h5 id = "following-text">Following</h5>
-                        <h2 id = "angka-following">0</h2>
-                        <h5 id = "follower">Follower</h5>
-                        <h2 id = "angka-follower">0</h2>
+                <!--Profile -->
+                <div class = "box-profil">
+                    <div class = "profil-user">
+                        <h1 id = "nama_profile">Thanos</h2>
+                        <h4 id = "nama_akun">@thanos</h4>
+                        <p>Musuh besar the avenger penyuka batu akik dan penjelajah galaxy.</p>
                     </div>
+                    <div class ="location-user">
+                        <i class="fas fa-map-marker-alt"> <span>Indonesia</span></i>
+                    </div>
+                    <div class ="location-user">
+                        <i class="far fa-calendar-alt"> <span>Joined 06 November 2018</span></i>
                     </div>
                 </div>   
 
-                <!-- Trending -->
+                <!-- Foto-foto -->
+                <div class="box-foto">
+                    <div class ="location-user">
+                        <i class="far fa-image"><span>
+                            <a href="">Photos and videos</a>
+                        </span></i>
+                    </div>
+                    <div id="foto-foto">
+                        <ul>
+                            <li><img src="gambar/image1.jpg"></li>
+                            <li><img src="gambar/image2.jpg"></li>
+                            <li><img src="gambar/image3.jpg"></li>
+                            <li><img src="gambar/image1.jpg"></li>
+                            <li><img src="gambar/image2.jpg"></li>
+                            <li><img src="gambar/image3.jpg"></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- tengah -->
+            <div>
+                <!-- tweetbox -->
+                <div class="box-profil-heading">
+                    <ul>
+                        <li><h3 href="#">Tweet</h3></li>
+                        <li><h3 href="#">Tweet&Replies</h3></li>
+                        <li><h3 href="#">Media</h3></li>
+                    </ul>
+                </div>
+                
+                <!-- tweetfeed -->
+                <div id = "tweetfeed-section">
+                    <!-- <div class="tweet">
+                        <img src="gambar/image1.jpg" alt="foto orang" id="gambar-akun" />
+                        <h4 id= "user-akun">Nama</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, voluptates! Corrupti eos tempora cumque pariatur!</p>
+                        <span>13:24 - 23 oktober 2018 </span>
+                        <button type="button" id="delete-tweet" onclick="deleteTweet()">X</button>
+                    </div>
+                    <div class="tweet">
+                        <img src="gambar/image1.jpg" alt="foto orang" id="gambar-akun" />
+                        <video src="video/video.mp4" controls id="video" alt="video orang"></video>
+                        <h4 id= "user-akun">Nama</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, voluptates! Corrupti eos tempora cumque pariatur!</p>
+                        <span>13:24 - 23 oktober 2018 </span>
+                        <button type="submit" id="delete-tweet">X</button>
+                    </div> -->
+                    <!-- <div class="tweet">
+                        <img src="gambar/image1.jpg" alt="foto orang" id="gambar-akun" />
+                        <img src="gambar/image1.jpg" alt="foto orang" id="gambar-tweet" />
+                        <h4 id= "user-akun">Nama</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, voluptates! Corrupti eos tempora cumque pariatur!</p>
+                        <span>13:24 - 23 oktober 2018 </span>
+                        <button type="submit" id="delete-tweet">X</button>
+                    </div> -->
+                </div>
+            </div>
+            
+            <!-- kanan -->
+            <div>
+                <!-- friend suggestion -->
+                    <div id="following">
+                        <div class="follow">
+                            <h3 id="follow-head">Following</h3>
+                            <small id ="follow-segarkan">.Refresh</small>
+                            <small id ="follow-see">.See all</small>
+                        </div>
+                        <!-- <div class="follow-gambar">
+                            <img src="gambar/image2.jpg" alt="gambar orang" id="gambar-akun" />
+                            <h4 id="following-nama">Thanos</h4>
+                            <small id ="follow-at">@thanos</small>
+                            <button type="submit" id="button-follow">following</button>
+                        </div>
+                        <div class="follow-gambar">
+                            <img src="gambar/image2.jpg" alt="gambar orang" id="gambar-akun" />
+                            <h4 id="following-nama">Thanos</h4>
+                            <small id ="follow-at">@thanos</small>
+                            <button type="submit" id="button-follow">following</button>
+                        </div>
+                        <div class="follow-gambar">
+                            <img src="gambar/image2.jpg" alt="gambar orang" id="gambar-akun" />
+                            <h4 id="following-nama">Thanos</h4>
+                            <small id ="follow-at">@thanos</small>
+                            <button type="submit" id="button-follow">following</button>
+                        </div> -->
+                    </div>
+
                 <div class ="trending-section">Trends for you
                     <div class="trending-head">
                         <a href="" id="trending">#PersibDay</a>
@@ -110,75 +234,6 @@
                         <p id="trending">40.1k Tweets</p>
                     </div>
                 </div>
-                
-            </div>
-
-            <!-- tengah -->
-            <div>
-                <!-- tweetbox -->
-                <div id="tweetbox-section">
-                    <form>
-                        <input type="text" id="tweet-box" placeholder="Whats happening?">
-                        <button type="button" id="submit-tweet" onclick="addTweet()">Tweet</button>
-                    </form>
-                </div>
-                
-                <!-- tweetfeed -->
-                <div id = "tweetfeed-section">
-                    <!-- <div class="tweet">
-                        <img src="gambar/image1.jpg" alt="foto orang" id="gambar-akun" />
-                        <h4 id= "user-akun">Nama</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, voluptates! Corrupti eos tempora cumque pariatur!</p>
-                        <span>13:24 - 23 oktober 2018 </span>
-                        <button type="button" id="delete-tweet" onclick="deleteTweet()">X</button>
-                    </div>
-                    <div class="tweet">
-                        <img src="gambar/image1.jpg" alt="foto orang" id="gambar-akun" />
-                        <video src="video/video.mp4" controls id="video" alt="video orang"></video>
-                        <h4 id= "user-akun">Nama</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, voluptates! Corrupti eos tempora cumque pariatur!</p>
-                        <span>13:24 - 23 oktober 2018 </span>
-                        <button type="submit" id="delete-tweet">X</button>
-                    </div>
-                    <div class="tweet">
-                        <img src="gambar/image1.jpg" alt="foto orang" id="gambar-akun" />
-                        <img src="gambar/image1.jpg" alt="foto orang" id="gambar-tweet" />
-                        <h4 id= "user-akun">Nama</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, voluptates! Corrupti eos tempora cumque pariatur!</p>
-                        <span>13:24 - 23 oktober 2018 </span>
-                        <button type="submit" id="delete-tweet">X</button>
-                    </div> -->
-                </div>
-            </div>
-            
-            <!-- kanan -->
-            <div>
-                <!-- friend suggestion -->
-                    <div id="following">
-                        <div class="follow">
-                            <h3 id="follow-head">Following</h3>
-                            <small id ="follow-segarkan">.Refresh</small>
-                            <small id ="follow-see">.See all</small>
-                        </div>
-                        <!-- <div class="follow-gambar">
-                            <img src="gambar/image2.jpg" alt="gambar orang" id="gambar-akun" />
-                            <h5 id="following-nama">Thanos</h5>
-                            <small id ="follow-at">@thanos</small>
-                            <button type="submit" id="button-follow" onclick="addFollow()">following</button>
-                        </div>
-                        <div class="follow-gambar">
-                            <img src="gambar/image2.jpg" alt="gambar orang" id="gambar-akun" />
-                            <h5 id="following-nama">Thanos</h5>
-                            <small id ="follow-at">@thanos</small>
-                            <button type="submit" id="button-follow">following</button>
-                        </div>
-                        <div class="follow-gambar">
-                            <img src="gambar/image2.jpg" alt="gambar orang" id="gambar-akun" />
-                            <h5 id="following-nama">Thanos</h5>
-                            <small id ="follow-at">@thanos</small>
-                            <button type="submit" id="button-follow">following</button>
-                        </div> -->
-                    </div>
 
                     <div id= "footer">
                         <div class = "footer">
@@ -200,18 +255,17 @@
                                     <a href="">Businesses</a>
                                     <a href="">Developers</a>
                                 </ul>
-                            </div>
                         </div>
                     </div>
             </div>
 
         </section>
-     <script> 
-        readTweet();
+    <script>
+        readTweetProfile();
         getFollowing();
         getProfileHome();
         loginFirst();
         getHomeNavbar();
-     </script>   
+    </script>
 </body>
 </html>

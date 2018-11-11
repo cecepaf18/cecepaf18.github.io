@@ -2,15 +2,15 @@
 <html>
 <head>
     <title>Sign Up Twitter</title>
-    <link rel="icon" type="image/x-icon" href="gambar/logo.jpg"/>
+    <link rel="icon" type="image/x-icon" href="gambar/logo.png"/>
     <link rel="stylesheet" type="text/css" href="css/style-login.css"/>
-    <script src = "main.js"></script>
+    <script src = "main-file.js"></script>
 </head>
 <body>
     <!-- navigasi header -->
     <header>
         <ul>
-            <li><a href=""><img src="gambar/logo.jpg" width=25px height=25px/>Home</a></li>
+            <li><a href=""><img src="gambar/logo.png" width=25px height=25px/>Home</a></li>
             <li><a href="">About</a></li>
         </ul>
     </header>
@@ -21,11 +21,13 @@
                 <form onsubmit="event.preventDefault(); signUp()" method="POST">
                     <h2>Sign Up to Twitter</h2>
                     
-                    <p><input type="text" id="name"  class="input" placeholder="Name" ></p>
-                    <p><input type="text" id="fullName" class="input" placeholder="Full Name"></p>
+                    <p><input type="text" id="username"  class="input" placeholder="Name" ></p>
+                    <p><input type="text" id="fullname" class="input" placeholder="Full Name"></p>
                     <p><input type="text" id="email" class="input" placeholder="Email" ></p>
                     <p><input type="password" id="password" class="input" placeholder="Password"></p>
-                    
+                    <p><input type="text" id="bio" class="input" placeholder="Bio"></p>
+                    <p><input type="text" id="photoprofile" class="input" placeholder="Photoprofile"></p>
+
                     <input type="submit" value="Sign Up" class="button">
                     
                 </form>
@@ -34,7 +36,7 @@
         
         <div id = "box-footer-signup">
 
-            <p>By clicking Sign Up, you agree to our <a href="">Terms, Data Policy</a> and <a href="">Cookie Policy.</a></p><BR>
+            <p>By clicking Log in, you agree to our <a href="login.html">Terms, Data Policy</a> and <a href="">Cookie Policy.</a></p><BR>
             <p>You will receive an SMS notification from Twitter and can reject it at any time.</p>
               
         </div>

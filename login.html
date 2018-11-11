@@ -1,16 +1,18 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
+
 <head>
     <title>Login on Twitter</title>
-    <link rel="icon" type="image/x-icon" href="gambar/logo.jpg"/>
-    <link rel="stylesheet" type="text/css" href="css/style-login.css"/>
-    <script src="main.js"></script>
+    <link rel="icon" type="image/x-icon" href="gambar/logo.png" />
+    <link rel="stylesheet" type="text/css" href="css/style-login.css" />
+    <script src="main-file.js"></script>
 </head>
+
 <body>
     <!-- navigasi header -->
     <header>
         <ul>
-            <li><a href=""><img src="gambar/logo.jpg" width=25px height=25px/>Home</a></li>
+            <li><a href=""><img src="gambar/logo.png" width=25px height=25px />Home</a></li>
             <li><a href="">About</a></li>
         </ul>
     </header>
@@ -18,22 +20,21 @@
     <div id="box-login">
 
         <div id="box-form">
-                <form onsubmit ="event.preventDefault(); logIn()" method="POST">
-                    <h2>Log in to Twitter</h2>
-                    
-                    <p><input type="text" class="input" id="email" placeholder="Phone, Email, or Username" ></p>
-                    <p><input type="password" class="input" id="password" placeholder="Password"></p>
-                    
-                    <input type="submit" value="Log In" class="button">
-        
-                    <input type="checkbox" class="box"> Remember me . <a href="">Forgot Password</a>
-                </form>
+            <form onsubmit="event.preventDefault(); logIn()" method="POST">
+                <h2>Log in to Twitter</h2>
+
+                <p><input type="text" class="input" id="email" placeholder="Phone, Email, or Username"></p>
+                <p><input type="password" class="input" id="password" placeholder="Password"></p>
+
+                <input type="submit" value="Log In" class="button">
+
+                <input type="checkbox" class="box"> Remember me . <a href="">Forgot Password</a>
+            </form>
         </div>
 
-        
-        <div id = "box-footer">
+        <div id="box-footer">
 
-            <p>New to Twitter? <a href="">Sign up now »</a></p><BR>
+            <p>New to Twitter? <a href="signup.html">Sign up now »</a></p><BR>
             <p>Already using Twitter via text message? <a href="">Activate your account »</a></p>
 
         </div>
@@ -41,4 +42,5 @@
 
 
 </body>
+
 </html>

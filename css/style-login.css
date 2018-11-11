@@ -114,7 +114,7 @@ header li:hover{
 
 #box-signUp{
     width:60%;
-    height:380px;
+    height:500px;
     margin: 10px auto;
     border:1px solid rgb(196,196,196);
     background: #eee;
@@ -154,6 +154,7 @@ header li:hover{
     font-weight: bold;
     font-size:15px;
     cursor:pointer;
+    color:white;
 }
 
 #box-form-signup button a{
